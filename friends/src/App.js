@@ -3,6 +3,7 @@ import './App.css';
 import { Route } from 'react-router-dom';
 import Login from "./components/Login";
 import FriendsList from './components/FriendsList';
+import PrivateRoute from './components/PrivateRoute';
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
     <div className="App">
       Friends App
       <Route exact path='/' component={Login} />
-      <Route path='/friends-list' component={FriendsList} />
+      <PrivateRoute path='/friends-list' component={FriendsList} />
     </div>
   );
 }
