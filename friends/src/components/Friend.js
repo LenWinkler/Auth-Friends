@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Friend = props => {
-    console.log('friend props', props)
     return (
         <>
         <p>Name: {props.name}</p>
